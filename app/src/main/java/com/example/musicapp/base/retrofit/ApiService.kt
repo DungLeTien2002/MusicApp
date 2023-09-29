@@ -14,5 +14,6 @@ interface ApiService {
     @GET("/api/musics?limit=200")
     fun getSong(@Header("Authorization") accessToken:String):Call<ListSongResponse>
 
-
+    @GET("/api/singers")
+    fun getArtist(@Header("Authorization") accessToken: String):Call<ListSongResponse>
 }
